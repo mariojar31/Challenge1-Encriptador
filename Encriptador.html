@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <title>MA - Encriptador de Textos</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+   	<body> 
+		<header>
+			<div class="caja-header">
+				<nav>
+                    <ul>
+                        <li><a href="EN/Encryptor.html">English</a></li>
+                    </ul>
+                </nav>
+				<section class="banner">
+				   <img src="imagenes/logo.png" class="logo">
+					<h1 class="titulo-principal">Encriptador de Textos 🔐</h1>
+				</section>
+			</div>	
+		</header>
+   		
+		<main>
+   			
+   			<section class="principal">
+   				<section class="caja-principal">
+	   				
+					<section class="bloque-mensaje">
+						<textarea cols="70" rows="10" id="mensaje" placeholder="Escriba aquí el mensaje a encriptar..." style="background-image:url(imagenes/escudo-open.png) ;"></textarea>
+						<p>⚠ Solo letras minúsculas y sin acento</p>
+					</section>
+
+					<section class="bloque-desencriptado">
+						<textarea class="texto-desencriptado" cols="70" rows="10" id="bloque" style="background-image: url(imagenes/escudomensaje.png);"></textarea>	
+					
+						<button name="Copiar" value="Copiar" id="botoncopiar" onclick="copiar()">Copiar</button>	
+
+					</section>
+									
+				</section>
+
+		
+				<section class="botones">
+					
+					<button name="Encriptar" value="Encriptar" id="boton-encriptar" onclick="btnEncriptar()">Encriptar</button>
+					<button name="Desencriptar" value="Desencriptar" id="boton-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+
+				</section>
+   				
+   			</section>   			
+   			
+   		</main>
+		
+		<footer id="pie">
+			<p>Designed & Developed</p>
+			<p>By: Mario Acendra</p>
+			<p> alura</p>
+		</footer>
+
+		<script src="script.js"></script>
+   	</body>
+
+
+</html>
+

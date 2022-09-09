@@ -1,0 +1,206 @@
+body{
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(180deg,rgb(255, 255, 255),rgb(6, 154, 142,0.4),rgb(6, 154, 142,0.1)) ;
+
+}
+
+header{
+    width: 80%;
+    align-content: center;
+}
+
+nav{
+    width: 100%;
+}
+
+.banner{
+    padding: 0 5%;
+    width: 90%;
+    display: flex;
+    position: relative;
+}
+
+.logo{
+    width: 10%;
+    position: absolute;
+    min-width: 95px;
+}
+
+.titulo-principal{
+    width: 50%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #005555;
+    position: relative;
+    padding-left: 15%;
+    padding-top: 3%;
+ 
+}
+
+main{
+    width: 90%;
+    padding: 5%;
+    color: #069A8E;
+}
+
+.principal{
+    width: 100%;
+    margin: 0;
+    
+}
+
+    .caja-principal{
+        width: 90%;
+        display: flex;
+        padding: 0 5%
+    }
+
+        .bloque-mensaje{
+            width: 60%;
+            display: block;
+        }
+
+            #mensaje{
+                width: 90%;
+                height: 200px;
+                font-size: 20px;
+                border-radius: 15px;
+	            border-color: #FFFFFF;
+                padding: 10px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 30%;
+            }
+
+            #mensaje::placeholder{
+                color: rgb(6, 154, 142, 0.7);
+                font-family: 'Montserrat', sans-serif;
+            }
+
+            .bloque-mensaje > p{
+                font-weight: bold;
+                margin: 5px 0;
+            }
+
+        .bloque-desencriptado{
+            width: 40%;
+            display: block;
+        }
+
+            #bloque{
+                width: 80%;
+                height: 100%;
+                border-radius: 15px;
+                border-color: #FFFFFF;
+                padding: 10px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 90%;
+            }
+
+            #botoncopiar{
+                position:relative;
+                width: 80%;
+                padding: 5px 0;
+                background: rgb(6, 154, 142, 0.5);
+                border-radius: 15px;
+                color: #005555;
+                font-size: 16px;
+                margin: 2px;
+            }
+    
+    .botones{
+        width: 100%;
+	    display: flex;
+        padding: 0 5%;
+    }
+
+        #boton-encriptar{
+            width: auto;
+            padding: 1% 10%;
+            background: rgb(6, 154, 142, 0.5);
+            border-radius: 15px;
+            color: #005555;
+            font-size: 16px;
+            margin: 1%;
+        }
+
+        #boton-desencriptar{
+            width: auto;
+            padding: 1% 5%;
+            border-radius: 15px;
+            color: #005555;
+            font-size: 16px;
+            margin: 1%;
+        }
+
+        #boton-encriptar:hover, #boton-desencriptar:hover,#botoncopiar:hover{
+            scale: 1.05;
+            font-weight: bold;
+            transition: all 0.5s;
+        }
+
+        #boton-encriptar:active, #boton-desencriptar:active,#botoncopiar:active{
+            border-color: #069A8E;
+        }
+
+footer{
+    text-align: center;
+    color: #005555;
+    padding: 10px;
+    font-size: 12px;
+}
+
+@media screen and (max-width:610px){
+    .banner{
+        margin-left: 5%;
+    }
+
+    .titulo-principal{
+        padding-left: 30%;
+    }
+    .caja-principal{
+        display: block;
+        margin-left: 0%;
+    }    
+
+        .bloque-mensaje{
+            width: 100%;
+        }
+
+        #mensaje{
+            height: 150px;
+            background-size: 30%;
+            font-size: 16px;
+        }
+
+
+    .bloque-desencriptado{
+        width: 100%;
+    }
+
+        #bloque{
+            width: 90%;
+            height: 130px;
+            background-size: 45%;
+        }
+
+        #botoncopiar{
+            width: 100%;
+        }
+    
+    .botones{   
+        margin-left: 0%;
+        width: 90%;
+        display:flex;
+        flex-direction: column;
+    }
+
+    footer{
+        margin-left: 5%;
+    }       
+        
+
+
+}

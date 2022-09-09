@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width">
+        <title>MA - Text Encryptor</title>
+        <link rel="stylesheet" href="../reset.css">
+        <link rel="stylesheet" href="../style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    </head>
+
+   	<body> 
+		<header>
+			<div class="caja-header">
+                <nav>
+                    <ul>
+                        <li><a href="../Encriptador.html">Español</a></li>
+                    </ul>
+                </nav>
+                <section class="banner">
+				   <img src="../imagenes/logo.png" class="logo">
+				    <h1 class="titulo-principal">Text Encryptor 🔐</h1>
+                </section>
+			</div>	
+		</header>
+   		
+		<main>
+   			
+   			<section class="principal">
+                <section class="caja-principal">
+	   				
+					<section class="bloque-mensaje">
+						<textarea cols="70" rows="10" id="mensaje" placeholder="Write the messaje to be encrypted here..." style="background-image:url(../imagenes/escudo-open.png) ;"></textarea>
+						<p>⚠ Only lowercase letters without accent.</p>
+					</section>
+
+                    <section class="bloque-desencriptado">
+					    <textarea class="texto-desencriptado" cols="70" rows="10" id="bloque" style="background-image:url(../imagenes/ENescudomensaje.png);"></textarea>	
+                        
+                        <button name="Copiar" value="Copiar" id="botoncopiar" onclick="copiar()">Copy</button>	
+					
+                    </section>
+				
+                </section>
+
+		
+				<section class="botones">
+					
+					<button name="Encriptar" value="Encriptar" id="boton-encriptar" onclick="btnEncriptar()">Encrypt</button>
+					<button name="Desencriptar" value="Desencriptar" id="boton-desencriptar" onclick="btnDesencriptar()">Decrypt</button>
+
+				</section>
+   									
+   			</section>   			
+   			
+   		</main>
+		
+		<footer id="pie">
+			<p>Designed & Developed</p>
+			<p>By: Mario Acendra</p>
+			<p> alura</p>
+		</footer>
+
+		<script src="../script.js"></script>
+   	</body>
+
+
+</html>
+
